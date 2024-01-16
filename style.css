@@ -1,0 +1,621 @@
+body{
+    font-family: 'Abel', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nombre{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    
+}
+.container-header{
+    background: rgb(10, 12, 20)
+
+}
+
+
+
+
+
+.container-header header{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+}
+nav{
+    text-align: center;
+    color: white;
+
+}
+ul{
+    list-style: none;
+}
+
+.container-header header .nombre a{
+
+    font-size: 36px;
+    color: rgba(227, 101, 29, 1);
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-align: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover{
+color: rgba(227, 101, 29, 1);
+}
+
+.nav-responsive{
+    background-color: rgba(227, 101, 29, 1);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*INICIO*/
+.inicio{
+    background-image: url("./img/FondoInicio.jpg");
+    background-image:url(img/FondoInicio.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: rgb(10, 12, 20);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner .contenedordeimg img{
+    margin-top:40px;
+    border: 10px solid rgba(227, 101, 29, 1);
+    display:block;
+    width: 90%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+}
+
+.inicio .contenido-banner h1:hover{color:rgba(227, 101, 29, 1) ;}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal ;
+}
+
+
+
+.inicio .contenido-banner .linkedin a{
+    color: white;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    
+}
+
+.inicio .contenido-banner .linkedin a:hover{
+    color:rgb(10, 102, 194) ;
+}
+
+.sobremi{
+    background-color:rgb(10, 12, 20) ;
+    color: white;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-sobremi{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    text-align: center; 
+    padding: 20px 0;
+
+}
+.sobremi h2:hover{color:rgba(227, 101, 29, 1) ;}
+.sobremi .contenido-sobremi p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.sobremi.contenido-sobremi p span{
+    color:rgba(227, 101, 29, 1) ;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color:rgba(227, 101, 29, 1) ;
+    width: 130px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(31, 37, 61) ;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color:rgba(227, 101, 29, 1) ;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 15px auto;
+    padding: 20px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+}
+
+
+.btn .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(227, 101, 29, 1);
+    z-index: -1;
+    transition: 1s;
+}
+.btn:hover .overlay{
+    width: 100%;
+    text-decoration: none;
+}
+.skills{
+    background-color: rgb(10, 12, 20);
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    padding: 50px 0;
+}
+.skills h2:hover{color:rgba(227, 101, 29, 1) ;}
+
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 50PX 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color:  rgb(31, 37, 61);
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: rgba(227, 101, 29, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(227, 101, 29, 1);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+    color: white;
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 4s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 4s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .diseno{
+    width: 0%;
+    animation: 4s diseno forwards;
+}
+@keyframes diseno {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .ingles{
+    width: 0%;
+    animation: 4s ingles forwards;
+}
+@keyframes ingles {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 4s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 4s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .trabajoenequipo{
+    width: 0%;
+    animation: 4s trabajoenequipo forwards;
+}
+@keyframes trabajoenequipo {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 4s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 82%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 4s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .responsabilidad{
+    width: 0%;
+    animation: 4s responsabilidad forwards;
+}
+@keyframes responsabilidad {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.curriculum{
+    background-color:rgb(10, 12, 20);
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 90px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.curriculum h2:hover{color:rgba(227, 101, 29, 1) ;}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid rgb(31, 37, 61);
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid rgb(31, 37, 61);
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgb(31, 37, 61);
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: rgba(227, 101, 29, 1);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: rgba(227, 101, 29, 1);
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid rgba(227, 101, 29, 1);
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid rgba(227, 101, 29, 1);
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: rgba(227, 101, 29, 1);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(227, 101, 29, 1);
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: rgba(227, 101, 29, 1);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(227, 101, 29, 1);
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+footer{
+    background-color: rgb(31, 37, 61);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(227, 101, 29, 1);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.redes a:hover{
+    background-color: rgba(227, 101, 29, 1);
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgb(31, 37, 61);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+
+    body{
+        background-color:rgb(10, 12, 20) ;
+    }
+
+    .contenido-seccion h2{font-size: 50px;}
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 90%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 90%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
